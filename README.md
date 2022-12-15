@@ -34,4 +34,4 @@ array('unique', [...])
 
 ---
 
-Copyright (c) 2022 Bengr - [Bengr web](https://bengr.cz/){:target="\_blank"}
+Copyright (c) 2022 Bengr - <a href="https://bengr.cz/" target="_blank">Bengr web</a>
