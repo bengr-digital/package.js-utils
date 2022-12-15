@@ -1,0 +1,19 @@
+{
+  "name": "@frantisek.spunda/boop",
+  "version": "0.1.0",
+  "description": "Library for whatever components and utils functions. Autor is Bengr company",
+  "main": "index.ts",
+  "scripts": {
+    "test": "dev"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "typescript"
+  ],
+  "author": "Bengr, František Špunda",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
