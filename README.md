@@ -10,7 +10,7 @@ Javascript/Typescript package for utils functions and another usefull things.
 
 ### install package
 
-First you need folder with npm. For this run `npm init` in cmd.
+First you need folder with npm. For this run `npm init` in cmd.<br>
 Then install our dependenci with `npm install @bengr.digital/js-utils`.
 
 After install you can use it. Just import
