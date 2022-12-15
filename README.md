@@ -1,4 +1,4 @@
-<img src='./mini.svg' />
+<img src='./logo.png' style='width: 250px' />
 
 # 📦 package.js-utils
 
