@@ -1,16 +1,36 @@
 {
   "name": "@bengr.digital/js-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Library for whatever components and utils functions. Autor is Bengr company",
-  "main": "index.ts",
   "scripts": {
-    "test": "dev"
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p ./configs/tsconfig.esm.json && mv lib/esm/index.js lib/esm/index.mjs",
+    "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
+    "prepack": "npm run build"
   },
   "keywords": [
     "npm",
     "package",
     "typescript"
   ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/esm/types/index.d.ts",
+        "default": "./lib/esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/cjs/types/index.d.ts",
+        "default": "./lib/cjs/index.js"
+      }
+    }
+  },
+  "types": "./lib/cjs/types/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "main": "./lib/cjs/index.js",
   "author": "Bengr",
   "license": "ISC",
   "dependencies": {
