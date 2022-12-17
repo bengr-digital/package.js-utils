@@ -1,6 +1,6 @@
 {
   "name": "@bengr.digital/js-utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Library for whatever components and utils functions. Autor is Bengr company",
   "scripts": {
     "clean": "rm -rf ./lib",
